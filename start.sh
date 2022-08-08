@@ -13,11 +13,4 @@ sleep 5
 sudo apt-get install -y nano runit
 runsvdir -P /etc/service &
 source $HOME/.bashrc
-wget -qO - https://apt.z.cash/zcash.asc | gpg --import
-gpg --export 3FE63B67F85EA808DE9B880E6DEF3BAF272766C0 | sudo apt-key add -
-echo "deb [arch=amd64] https://apt.z.cash/ buster main" | sudo tee /etc/apt/sources.list.d/zcash.list
-sudo apt-get update
-sudo apt-get install -y zcash
-zcash-fetch-params
-mkdir -p /root/.zcash/ && touch /root/.zcash/zcash.conf
-zcashd
+

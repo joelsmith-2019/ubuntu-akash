@@ -1,2 +1,1 @@
-# zcashd-akash
-run zcashd on akash!
+# Ubuntu on Akash

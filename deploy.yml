@@ -6,7 +6,7 @@ services:
     image: ubuntu:latest
     
     env:
-      - "my_root_password=YourSuperGreatPasswordNumber_DO_NOT_USE_THIS_OR_YOU_WILL_GET_ROBBED_385593" # root password for ssh connection.
+      - "my_root_password=12345678" # root password for ssh connection.
     
     command:
       - "bash"
@@ -22,14 +22,6 @@ services:
           - global: true
       - port: 22
         as: 22
-        to:
-          - global: true
-      - port: 8232
-        as: 8232
-        to:
-          - global: true
-      - port: 8233
-        as: 8233
         to:
           - global: true
            
