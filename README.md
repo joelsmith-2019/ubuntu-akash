@@ -1,1 +1,1 @@
-# Ubuntu on Akash
+# Arch on Akash
