@@ -30,9 +30,9 @@ profiles:
     app:
       resources:
         cpu:
-          units: 8
+          units: 4
         memory:
-          size: 16Gi
+          size: 8Gi
         storage:
           size: 200Gi
          
