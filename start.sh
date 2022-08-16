@@ -5,4 +5,3 @@ echo "My Root Password = " ${my_root_password}
 sleep 5
 systemctl restart sshd
 systemctl start nginx
-
