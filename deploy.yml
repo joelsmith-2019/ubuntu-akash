@@ -3,17 +3,17 @@ version: "2.0"
 
 services:
   app:
-    image: archlinux:latest
-    
+    image: ubuntu:latest
+
     env:
-      - "my_root_password=123456789" # root password for ssh connection.
+      - "my_root_password=DVEkMY8h7vdYvPPg89Bq17uGfMeQaQ" # root password for ssh connection.
     
     command:
       - "bash"
       - "-c"
       
     args:
-      - 'pacman --noconfirm -Syyu go git wget curl ; wget --quiet -O - https://raw.githubusercontent.com/joelsmith-2019/ubuntu-akash/main/start.sh | bash ; sleep infinity'   
+      - 'apt-get update ; apt-get upgrade -y ; apt-get install -y  curl ; curl -s https://raw.githubusercontent.com/nfl0/zcashd-akash/main/start.sh | bash ; sleep infinity'   
     
     expose:
       - port: 80
@@ -34,7 +34,7 @@ profiles:
         memory:
           size: 8Gi
         storage:
-          size: 200Gi
+            size: 400Gi
          
   placement:
     akash: 
