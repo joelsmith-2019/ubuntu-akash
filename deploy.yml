@@ -13,7 +13,7 @@ services:
       - "-c"
       
     args:
-      - 'apt-get update ; apt-get upgrade -y ; apt-get install -y  curl ; curl -s https://raw.githubusercontent.com/nfl0/zcashd-akash/main/start.sh | bash ; sleep infinity'   
+      - 'apt-get update ; apt-get upgrade -y ; apt-get install -y  curl ; curl -s https://raw.githubusercontent.com/joelsmith-2019/ubuntu-akash/main/start.sh | bash ; sleep infinity'   
     
     expose:
       - port: 80
